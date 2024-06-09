@@ -1,0 +1,123 @@
+/* src/components/Home.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;  /* Hacker-style font */
+    background-color: #0f0f0f;
+    color: #0f0;  /* Green text to mimic old terminal colors */
+  }
+  
+  .home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .binary-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .binary {
+    position: absolute;
+    top: -100%;
+    width: 80px;  /* Increased width for larger binary code */
+    height: 200%;
+    background: linear-gradient(to bottom, #0f0 50%, transparent 50%);
+    animation: scroll 5s linear infinite;
+    opacity: 0.5;
+  }
+  
+  .binary:nth-child(1) {
+    left: 10%;
+    animation-duration: 4s;
+  }
+  
+  .binary:nth-child(2) {
+    left: 50%;
+    animation-duration: 6s;
+  }
+  
+  .binary:nth-child(3) {
+    left: 80%;
+    animation-duration: 8s;
+  }
+  
+  @keyframes scroll {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  h1 {
+    font-size: 6em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0;
+  }
+  
+  p {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-shadow: 0 0 5px #0f0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+  
+  nav a {
+    color: #0f0;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff0;
+  }
+  
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      opacity: 0.99;
+    }
+    20%, 24%, 55% {
+      opacity: 0.4;
+    }
+  }
+  
+  body {
+    animation: flicker 1.5s infinite;
+  }
+  

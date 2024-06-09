@@ -1,0 +1,116 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.demo {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+h2, h3 {
+  color: #ff3c3c;
+}
+
+.user-hacker-screen {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.user-screen, .hacker-screen {
+  width: 45%;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #111;
+}
+
+.user-screen h3, .hacker-screen h3 {
+  color: #ff3c3c;
+}
+
+.captured-data {
+  margin-top: 20px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.captured-data h3 {
+  color: #ff3c3c;
+}
+
+.explanation {
+  margin-top: 20px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.explanation p {
+  color: #fff;
+}
+
+.user-screen {
+  width: 320px; /* Adjust to fit a typical mobile screen */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto; /* Center the form */
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 80px; /* Adjust according to the size of your Amazon logo */
+}
+
+.user-screen h3 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #111;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.signin-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #ddb347;
+}
